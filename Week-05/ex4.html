@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>String Processor</title>
+</head>
+
+<body>
+
+<h2>String Processor Tool</h2>
+
+<input type="text" id="text" placeholder="Enter sentence">
+
+<button onclick="process()">Process</button>
+
+<div id="result"></div>
+
+<script>
+
+let reverseString = function(str){
+return str.split("").reverse().join("");
+}
+
+let countVowels = (str)=>{
+let vowels = "aeiouAEIOU";
+let count = 0;
+
+for(let ch of str){
+if(vowels.includes(ch)){
+count++;
+}
+}
+
+return count;
+}
+
+let longestWord = function(str){
+
+let words = str.split(" ");
+
+let longest="";
+
+for(let w of words){
+
+if(w.length > longest.length){
+longest = w;
+}
+
+}
+
+return longest;
+
+}
+
+function process(){
+
+let text = document.getElementById("text").value;
+
+let output="";
+
+output+="Reverse: "+reverseString(text)+"<br>";
+output+="Vowels: "+countVowels(text)+"<br>";
+output+="Longest Word: "+longestWord(text)+"<br>";
+output+="Uppercase: "+text.toUpperCase();
+
+document.getElementById("result").innerHTML=output;
+
+}
+
+</script>
+
+</body>
+</html>
