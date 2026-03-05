@@ -1,0 +1,21 @@
+body{
+text-align:center;
+font-family:Arial;
+}
+
+img{
+border:2px solid black;
+box-shadow:5px 5px 10px gray;
+}
+
+a{
+color:blue;
+text-decoration:none;
+}
+
+a:hover{
+color:red;
+}
+body{
+    background-color: darkkhaki;
+}

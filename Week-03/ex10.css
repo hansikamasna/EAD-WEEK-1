@@ -1,0 +1,22 @@
+.nav{
+list-style:none;
+display:flex;
+background:black;
+}
+
+.nav li{
+color:white;
+padding:15px;
+position:relative;
+}
+
+.menu{
+display:none;
+position:absolute;
+background:gray;
+list-style:none;
+}
+
+.dropdown:hover .menu{
+display:block;
+}

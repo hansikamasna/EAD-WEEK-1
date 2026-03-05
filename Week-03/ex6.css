@@ -1,0 +1,28 @@
+body{
+font-family: Arial, sans-serif;
+background:#f0f0f0;
+}
+
+.resume{
+width:60%;
+margin:50px auto;
+text-align:center;
+background:rgb(46, 120, 156);
+padding:20px;
+border-radius:10px;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid black;
+padding:10px 20px;
+text-align:center;
+}
+
+ul{
+list-style-position:inside;
+}

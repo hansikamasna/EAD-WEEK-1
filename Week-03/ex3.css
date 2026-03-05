@@ -1,0 +1,26 @@
+body{
+font-family:Verdana;
+}
+
+form{
+width:300px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:8px;
+margin:10px 0;
+}
+
+textarea{
+height:120px;
+}
+
+input:focus,textarea:focus{
+border:2px solid blue;
+}
+
+body{
+background:red;
+}
